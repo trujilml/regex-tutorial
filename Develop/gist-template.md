@@ -1,10 +1,10 @@
-# Title (replace with your title)
+# Matching an Email Address - Regex Tutorial
 
-Introductory paragraph (replace this with your text)
+We will be demonstrating the regex expression `/^([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})$/` to match an email address. This tutorial will be useful when integrating this expression in applications such as Node.js (Inquirer), JavaScript, or MongoDB.
 
 ## Summary
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
+Regex, also known as regular expressions, are a series of unique patterns that define a search pattern and describe it by its unique factors. The search identifies these characters and validate input from this unique pattern. In the case of an email address, this regex has the unique responsiblity to make sure a user enters an email address that starts with a set of characters prior to implementing the `@` symbol followed by a domain link. 
 
 ## Table of Contents
 
@@ -23,6 +23,7 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ## Regex Components
 
 ### Anchors
+The characters `^` and `$` are considered anchors for this regex. `^` matches the beginning of the regex and signifies a string that starts with other characters following it. `$` matches the end of the regex and signifies a string that ends with the characters preceding it. The regex ends at `$` as `(m)` or multiline, is not allowed in consideration that an email submission only takes one line.
 
 ### Quantifiers
 
