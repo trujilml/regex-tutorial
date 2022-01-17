@@ -14,9 +14,6 @@ Regex, also known as regular expressions, are a series of unique patterns that d
 - [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
 - [Greedy and Lazy Match](#greedy-and-lazy-match)
-- [Boundaries](#boundaries)
-- [Back-references](#back-references)
-- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
 
 ## Regex Components
 
@@ -60,11 +57,7 @@ Bracket Expressions `[]` are positive as they represent the characters that we m
 
 ### Greedy and Lazy Match
 
-### Boundaries
-
-### Back-references
-
-### Look-ahead and Look-behind
+Quantifiers are 'greedy' as they match as many occuring patterns as possible. In this case of the regex matching an email address, `+` is used to match a pattern one or more times and `{}` is used to match the numerical requirements for the domain name. The latter is presented as `{2,6}` for the requirement of the last string.
 
 ## Author
 
