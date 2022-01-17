@@ -10,7 +10,6 @@ Regex, also known as regular expressions, are a series of unique patterns that d
 
 - [Anchors](#anchors)
 - [Quantifiers](#quantifiers)
-- [OR Operator](#or-operator)
 - [Character Classes](#character-classes)
 - [Flags](#flags)
 - [Grouping and Capturing](#grouping-and-capturing)
@@ -28,7 +27,11 @@ The characters `^` and `$` are considered anchors for this regex. `^` matches th
 
 ### Quantifiers
 
-### OR Operator
+Quantifies set the limit of a string that the regex matches, looking for the minimum and maximum number of characters that the regex is looking for. 
+
+The `+` operator at the end of the first two brackets indicates the matching of the pattern one or multiple times. This connects the user's email name, the domain name of the email service, and the ending domain name (ex: `.net`). 
+
+`{2,6}` for the last bracket expression appears prior to the '$' anchor. It is looking for a minimum of 2 characters to a maximum of 6 characters for the ending domain name (ex: `.com`) to attach on the domain address, making up the domain section of the email address. It allows the match range for `[a-z\.]`.
 
 ### Character Classes
 
@@ -56,4 +59,6 @@ Bracket Expressions `[]` are positive as they represent the characters that we m
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Mekayla Trujillo 
+[GitHub Page](https://github.com/trujilml)
+
